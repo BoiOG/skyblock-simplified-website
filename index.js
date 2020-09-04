@@ -40,8 +40,6 @@ class FunctionStructure {
             let username = document.getElementById("player_username").value;
             if (username.length < 3) return func.showAlert(document, "ERROR", "The username cannot be less than 3 characters", "#eb4034");
             if (username.length > 16) return func.showAlert(document, "ERROR", "The username cannot be more than 16 characters\nstop inspect elementing..", "#eb4034");
-        
-            window.location.href = "https://www.youtube.com/watch?v=fC7oUOUEEi4"
         }
         
         okButton() {

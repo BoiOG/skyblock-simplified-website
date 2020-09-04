@@ -26,13 +26,13 @@
         <div class="container-submission", id="container-submission">
             <h1 class="main-title">Skyblock Optimizer</h1>
             <input type="text" id="player_username" name="player_username_input" placeholder="Player Username" required minlength="3" maxlength="16" class="player_username_input">
-            <button onclick="func.submitted(document)" id="submit" class="submission-button">Continue</button>
+            <button onclick="okButton()" id="submit" class="submission-button">Continue</button>
         </div>
 
         <div class="alert-box", id="alert-box">
             <h1 class="alert-box-title" id="alert-box-title"></h1>
             <p class="alert-box-description" id="alert-box-description"></p>
-            <button onclick="func.okButton()" id="submit" class="submission-button">Okay</button>
+            <button onclick="okButton()" id="submit" class="submission-button">Okay</button>
         </div>
 
         <div class="profile-selector", id="profile-selector">
@@ -40,7 +40,9 @@
         </div>
 
         <script type = "text/javascript">
-            let func = new functions();
+            function okButton() {
+                window.location.href = "https://www.youtube.com/watch?v=fC7oUOUEEi4"
+            }
             setTimeout(function () {
                 var loading_div = document.getElementById("loading-animation");
                 if (loading_div) {
